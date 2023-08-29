@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        ext-config:
+          - data-id: dev-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-feign-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-log-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-user.yml
+            group: demo
+            refresh: true
+          - data-id: dev-mybatis-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-nacos-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-mysql-common.yml
+            group: demo
+            refresh: true

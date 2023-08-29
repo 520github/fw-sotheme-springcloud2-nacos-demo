@@ -1,0 +1,5 @@
+mybatis:
+  type-aliases-package: org.sunso.sotheme.springcloud.order.entity
+  configuration:
+    cache-enabled: true
+    map-underscore-to-camel-case: true

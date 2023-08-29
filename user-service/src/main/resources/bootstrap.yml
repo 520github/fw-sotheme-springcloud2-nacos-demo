@@ -1,0 +1,56 @@
+
+server:
+  port: ${port:9092}
+  #servlet:
+    #context-path: /user
+
+spring:
+  application:
+    name: userService
+  profiles:
+    active: ${activeProfile:dev}
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.5.25:8848
+        namespace: demo
+#      discovery:
+#        register-enabled: true
+#        server-addr: 192.168.5.25:8848
+#        namespace: demo
+#        group: DEFAULT_GROUP
+#        ip: ${localIp:192.168.16.211}
+#        metadata:
+#          weight: 3
+#          #serviceName: ${spring.application.name}
+#          serviceId: user-21
+#          serverId: user-21-01
+#  datasource:
+#    type: com.zaxxer.hikari.HikariDataSource
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: lvdong
+#    password: 'Ld123!@#'
+#    url: jdbc:mysql://192.168.5.23:3306/data_raw?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+
+#mybatis:
+#  type-aliases-package: org.sunso.sotheme.springcloud.user.entity
+#  configuration:
+#    cache-enabled: true
+#    map-underscore-to-camel-case: true
+#
+#mapper:
+#  mappers: org.sunso.sotheme.springcloud.order.base.CommonMapper
+#  not-empty: false
+#  identity: MYSQL
+#
+#pagehelper:
+#  helperDialect: mysql
+#  reasonable: false
+#  supportMethodsArguments: true
+#  params: count=countSql
+
+#logging:
+#  path: /tmp/coupon
+#  level:
+#    root: info
+#    feign.Logger: debug

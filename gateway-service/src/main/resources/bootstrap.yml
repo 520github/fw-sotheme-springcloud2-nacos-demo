@@ -1,0 +1,30 @@
+server:
+  port: ${port:9090}
+
+gateway:
+  filter:
+    gloabl-request-rate-count: 10
+    verify-token: false
+
+
+spring:
+  application:
+    name: gatewayService
+  profiles:
+    active: ${activeProfile:dev}
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.5.25:${NACOS_PORT:8848}
+        namespace: demo
+        group: demo
+      discovery:
+        register-enabled: true
+        server-addr: 192.168.5.25:8848
+        namespace: demo
+        group: DEFAULT_GROUP
+        ip: ${localIp:192.168.16.211}
+    gateway:
+      discovery:
+        locator:
+          enabled: true

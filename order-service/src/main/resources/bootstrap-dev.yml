@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        ext-config:
+          - data-id: dev-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-order.yml
+            group: demo
+            refresh: true

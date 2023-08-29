@@ -1,0 +1,16 @@
+
+server:
+  port: ${port:9093}
+  #servlet:
+    #context-path: /coupon
+
+spring:
+  application:
+    name: dataService
+  profiles:
+    active: ${activeProfile:dev}
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.5.25:8848
+        namespace: demo

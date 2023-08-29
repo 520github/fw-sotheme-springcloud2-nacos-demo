@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        register-enabled: true
+        server-addr: 192.168.5.25:8848
+        namespace: demo
+        group: DEFAULT_GROUP
+        ip: ${localIp:192.168.16.211}
+        metadata:
+          weight: 3
+          #serviceName: ${spring.application.name}
+          serviceId: order-11
+          serverId: order-11-01
