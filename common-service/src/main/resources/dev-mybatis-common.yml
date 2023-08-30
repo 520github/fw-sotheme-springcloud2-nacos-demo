@@ -3,3 +3,14 @@ mybatis:
   configuration:
     cache-enabled: true
     map-underscore-to-camel-case: true
+
+#mapper:
+#  mappers: org.sunso.sotheme.springcloud.order.base.CommonMapper
+#  not-empty: false
+#  identity: MYSQL
+#
+#pagehelper:
+#  helperDialect: mysql
+#  reasonable: false
+#  supportMethodsArguments: true
+#  params: count=countSql

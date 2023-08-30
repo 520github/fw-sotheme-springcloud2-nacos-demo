@@ -10,5 +10,5 @@ spring:
         metadata:
           weight: 3
           #serviceName: ${spring.application.name}
-          serviceId: order-11
-          serverId: order-11-01
+          #serviceId: order-11
+          #serverId: order-11-01

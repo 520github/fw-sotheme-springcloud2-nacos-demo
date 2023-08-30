@@ -2,3 +2,4 @@ logging:
   path: /tmp/demo
   level:
     root: info
+    org.sunso: debug

@@ -6,7 +6,6 @@ gateway:
     gloabl-request-rate-count: 10
     verify-token: false
 
-
 spring:
   application:
     name: gatewayService

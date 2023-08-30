@@ -1,0 +1,5 @@
+biz:
+  db:
+    name: data_raw
+  entity:
+    package: org.sunso.sotheme.springcloud.order.entity

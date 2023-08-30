@@ -6,6 +6,21 @@ spring:
           - data-id: dev-common.yml
             group: demo
             refresh: true
-          - data-id: dev-order.yml
+          - data-id: dev-feign-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-log-common.yml
+            group: demo
+            refresh: true
+          - data-id: application.yml
+            group: demo
+            refresh: true
+          - data-id: dev-mybatis-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-nacos-common.yml
+            group: demo
+            refresh: true
+          - data-id: dev-mysql-common.yml
             group: demo
             refresh: true

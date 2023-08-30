@@ -1,0 +1,3 @@
+biz:
+  entity:
+    package: org.sunso.sotheme.springcloud.user.entity
