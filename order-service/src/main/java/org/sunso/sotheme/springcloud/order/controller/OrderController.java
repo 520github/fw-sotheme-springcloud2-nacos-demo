@@ -3,6 +3,8 @@ package org.sunso.sotheme.springcloud.order.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.sunso.keypoint.springboot2.controller.intercept.global.annotation.NeedResponseBodyAdvice;
+import org.sunso.keypoint.springboot2.controller.intercept.global.annotation.NotNeedResponseBodyAdvice;
 import org.sunso.sotheme.springcloud.common.data.DataDTO;
 import org.sunso.sotheme.springcloud.common.user.UserDTO;
 import org.sunso.sotheme.springcloud.order.entity.Order;
@@ -12,6 +14,7 @@ import org.sunso.sotheme.springcloud.order.service.OrderService;
 
 import java.util.Date;
 
+@NotNeedResponseBodyAdvice
 @Slf4j
 @RestController
 @RequestMapping("/order")
@@ -26,6 +29,7 @@ public class OrderController {
     @Autowired
     private DataFeignClient dataFeignClient;
 
+    @NeedResponseBodyAdvice
     @GetMapping("/test/async/{time}")
     public long testAsync(@PathVariable long time) {
         Thread thread = new Thread(new Runnable() {

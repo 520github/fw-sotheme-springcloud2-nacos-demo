@@ -20,6 +20,11 @@
     <dependencies>
         <dependency>
             <groupId>org.sunso.keypoint.springboot2</groupId>
+            <artifactId>controller-intercept-starter-global</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.sunso.keypoint.springboot2</groupId>
             <artifactId>trace-log-starter-web-mdc</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
