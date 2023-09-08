@@ -8,7 +8,6 @@ import org.sunso.keypoint.springboot2.common.status.ResultStatusEnumInterface;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
 @Slf4j
 //@Controller
 @RestController
@@ -22,7 +21,7 @@ public class DemoController {
     }
 
     @GetMapping("/exception/biz/{tag}")
-    public String bizException(String tag) {
+    public String bizException(@PathVariable String tag) {
         if ("error".equalsIgnoreCase(tag)) {
             throw new BizRuntimeException(ResultStatusEnumInterface.valueOf("error", "测试异常"));
         }

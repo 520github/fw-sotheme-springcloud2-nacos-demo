@@ -14,7 +14,7 @@ import org.sunso.sotheme.springcloud.order.service.OrderService;
 
 import java.util.Date;
 
-@NotNeedResponseBodyAdvice
+//@NotNeedResponseBodyAdvice
 @Slf4j
 @RestController
 @RequestMapping("/order")
