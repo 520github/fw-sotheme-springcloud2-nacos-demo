@@ -18,8 +18,8 @@ import org.sunso.keypoint.springboot2.controller.intercept.global.aspect.Abstrac
 @Component
 @Order(0)
 public class OrderControllerLogAspect extends AbstractControllerLog {
-  // AOP
-  @Pointcut("execution(* org.sunso.sotheme.springcloud.order.controller.*.*Controller.*(..)) || execution(* org.sunso.sotheme.springcloud.order.controller.*Controller.*(..))")
+  // AOP || execution(* org.*..*.controller.*Controller.*(..))
+  @Pointcut("execution(* org.*..*.controller..*Controller.*(..)) ")
   public void execute() {}
 
   @Around("execute()")
