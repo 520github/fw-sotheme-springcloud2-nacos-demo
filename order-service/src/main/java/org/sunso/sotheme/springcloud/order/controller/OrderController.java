@@ -26,6 +26,18 @@ public class OrderController {
     @Autowired
     private DataFeignClient dataFeignClient;
 
+    @GetMapping("/test/async/{time}")
+    public long testAsync(@PathVariable long time) {
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                log.info("testAsync time[{}]", time);
+            }
+        });
+        thread.start();
+        return time;
+    }
+
     @GetMapping("/get/{orderId}")
     @ResponseBody
     public Order getOneByOrderId(@PathVariable Long orderId) {

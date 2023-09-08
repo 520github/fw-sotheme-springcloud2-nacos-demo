@@ -19,6 +19,17 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.sunso.keypoint.springboot2</groupId>
+            <artifactId>trace-log-starter-web-mdc</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.sunso.keypoint.springboot2</groupId>
+            <artifactId>trace-log-starter-feign</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
