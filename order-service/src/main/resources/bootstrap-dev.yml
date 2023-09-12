@@ -1,4 +1,8 @@
 spring:
+  redis:
+    host: 192.168.5.25
+    port: 6381
+    password: Ld123!@#
   cloud:
     nacos:
       config:
